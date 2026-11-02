@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Following the $LIBRA money</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="On-chain financial forensics with public data: 957,000 transactions, 23 points where the trail ends.">
+<meta property="og:title" content="Following the $LIBRA money">
+<meta property="og:description" content="957,000 public transactions, reduced to 23 points where the trail ends.">
+<meta property="og:image" content="https://giuppone.github.io/libra-money-trail/portada_en.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap">
+<style>
+:root{--papel:#E9EEF3;--tinta:#16243A;--suave:#4A5A70;--pool:#1F5FA8;--equipo:#F28E2B;--exchange:#2E9E68;--linea:#B8C4D2;--fondo2:#16243A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 1.0625rem/1.6 Archivo,"Segoe UI",system-ui,sans-serif}
+a{color:var(--pool)}
+a:focus-visible{outline:3px solid var(--equipo);outline-offset:2px}
+.marco{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+.apertura{display:grid;gap:3rem;padding:4rem 0 3rem}
+h1{font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.08;font-weight:700;letter-spacing:-.02em;margin:0 0 1.25rem;max-width:18ch}
+.bajada{font-size:1.2rem;color:var(--suave);max-width:38ch;margin:0 0 2rem}
+.acciones{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center}
+.boton{display:inline-block;background:var(--tinta);color:#fff;padding:.8rem 1.4rem;border-radius:4px;text-decoration:none;font-weight:600}
+.boton:hover{background:var(--pool)}
+.ruta{list-style:none;margin:0;padding:0;position:relative}
+.ruta::before{content:"";position:absolute;left:.5rem;top:.6rem;bottom:.6rem;width:3px;background:var(--equipo)}
+.ruta li{position:relative;padding-left:2.1rem}
+.stop{font-weight:600;padding-top:.2rem;padding-bottom:.2rem}
+.stop::before{content:"";position:absolute;left:0;top:.5rem;width:1.15rem;height:1.15rem;border-radius:50%;background:var(--linea);border:3px solid var(--papel)}
+.stop.pool::before{background:var(--pool)}.stop.team::before{background:var(--equipo)}.stop.exchange::before{background:var(--exchange)}
+.step{font-size:.92rem;color:var(--suave);padding-top:.1rem;padding-bottom:.55rem}
+.step time{margin-right:.5rem}.step a{margin-left:.5rem;white-space:nowrap}
+.gap{height:var(--alto);min-height:5rem;display:flex;align-items:center;font-size:.92rem;font-style:italic;color:var(--suave)}
+.gap::before{content:"";position:absolute;left:.5rem;top:0;bottom:0;width:3px;background:var(--papel);background-image:linear-gradient(var(--equipo) 50%,transparent 50%);background-size:3px 12px}
+.nota{font-size:.92rem;color:var(--suave);max-width:60ch;margin:1.25rem 0 0}
+section{padding:3rem 0;border-top:1px solid var(--linea)}
+h2{font-size:1.65rem;line-height:1.2;margin:0 0 1rem;letter-spacing:-.01em}
+.texto{max-width:62ch}
+.dos{display:grid;gap:2.5rem}
+video{width:100%;max-width:30rem;display:block;border-radius:4px;background:var(--tinta)}
+ul.limites{padding-left:1.1rem;margin:0}ul.limites li{margin-bottom:.5rem}
+.contacto{background:var(--fondo2);color:#fff;border:0}
+.contacto a{color:#FFC98F}.contacto .boton{background:var(--equipo);color:var(--fondo2)}.contacto .boton:hover{background:#FFC98F}
+footer{padding:1.5rem 0 2.5rem;font-size:.88rem;color:var(--suave)}
+@media (min-width:60rem){.apertura{grid-template-columns:1fr 1fr;align-items:start;padding-top:5.5rem}.dos{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<main class="marco">
+<div class="apertura">
+<div>
+<h1>We followed the $LIBRA money for 16 months, from the pool to the exchange.</h1>
+<p class="bajada">957,000 public transactions on 4 blockchains, reduced to 23 points where the trail ends. Only an authority can ask who is behind them.</p>
+<div class="acciones">
+<a class="boton" href="dashboard.html">Trace the money</a>
+<a href="mailto:cristian.giuppone@unc.edu.ar">Email me about a similar case</a>
+</div>
+</div>
+<div>
+<ol class="ruta" aria-label="One route of the money, step by step">
+<li class="stop pool"><span>Meteora DLMM</span></li>
+<li class="step"><time datetime="2025-02-14">Feb 14, 2025</time> <span>USD 26.5M</span> <a href="https://solscan.io/tx/BjH27fxfMm3tS9Lv4smz2CDtuiPgomGvQ6UJZ6S7nLcJVFX3gPkpmPhacanna3iT5LmMR4ktYKJZnKM1B3XfMH3" rel="noopener">See the transaction</a></li>
+<li class="stop team"><span>Team BXoC…</span></li>
+<li class="step"><time datetime="2025-02-15">Feb 15, 2025</time> <span>USD 29.7M</span> <a href="https://solscan.io/tx/3QW72eXXGtFiuSTLx9Bo3pkyU5V3HaoWpcaufCqHTLtJx8j1zaqyEGa9bmLHYW7qacQQ7TnTD8G94qhWqNCJTpYd" rel="noopener">See the transaction</a></li>
+<li class="stop wallet"><span>B9KTwx…</span></li>
+<li class="gap" style="--alto:242px"><span>283 days with no movement on this route</span></li>
+<li class="step"><time datetime="2025-11-25">Nov 25, 2025</time> <span>USD 20.6M</span> <a href="https://solscan.io/tx/4YFZezohfsaGGNeA7Cbrp7TALjvUpE513Y1JEywPDLPHkRJm5N2w3DKfagtiMMKAEB7JPcrLLjJpVCnLRLC1nz71" rel="noopener">See the transaction</a></li>
+<li class="stop wallet"><span>6P9iSP…</span></li>
+<li class="step"><time datetime="2025-12-02">Dec 02, 2025</time> <span>USD 4.2M</span> <a href="https://solscan.io/tx/3iaukWDsaB2Vkb6g1t2JofciCYaq5PoAG14oPArgprQGRRmr8Dqxu1TE8P8gqiwBXUqi7jgSWXzVE4Rs6qf1mNXm" rel="noopener">See the transaction</a></li>
+<li class="stop wallet"><span>GifgJF…</span></li>
+<li class="step"><time datetime="2025-12-03">Dec 03, 2025</time> <span>USD 5.7M</span> <a href="https://solscan.io/tx/664qjdsfW3gWCt7pwSZq8tXX3ZxqkLNtYpnSVmxoMTC8YWGubXqk4FPyUKc9N84aKxdweyEpKnQpdGP6issfLuAT" rel="noopener">See the transaction</a></li>
+<li class="stop wallet"><span>DMJ7EE…</span></li>
+<li class="step"><time datetime="2025-12-03">Dec 03, 2025</time> <span>USD 17.7M</span> <a href="https://solscan.io/tx/49FHYvvNqkcfJWti2NS2XSob2d5iXUG22MFdxwJo9qv6osuHBYEyWajsWEfVgQoVqXb4bevLVMuQ6tY6rR8pDwfc" rel="noopener">See the transaction</a></li>
+<li class="stop exchange"><span>Binance 2</span></li>
+</ol>
+<p class="nota">One real route, not the full amount. Its smallest step is USD 4.2M. The row in the table adds several paths and can include other money. Passing through a wallet does not show who controls it.</p>
+</div>
+</div>
+
+<section class="dos">
+<div class="texto">
+<h2>What the page lets you do</h2>
+<p>Pick any of the 23 exit points. You see all the paths that reach it, so you can see how the money was split and joined again, with one main route in orange. Each step of that route has a date, an amount and a link to a public blockchain explorer, so you do not have to trust me. You can check it yourself.</p>
+<p>The dashboard also shows nine known patterns, such as liquidity added on one side only and fragmented withdrawals. It works best on a large screen.</p>
+</div>
+<video controls playsinline preload="none" poster="portada_en.png" aria-label="18-second video of the money moving through the graph">
+<source src="video_libra_18s.mp4" type="video/mp4">
+<a href="video_libra_18s.mp4">Download the video</a>
+</video>
+</section>
+
+<section>
+<div class="texto">
+<h2>What this work does not show</h2>
+<ul class="limites">
+<li>It does not claim that a crime was committed, and it does not identify people. Only the courts can ask a service who a customer is.</li>
+<li>An address on the list does not mean its owner did anything wrong. Many are exchange wallets with millions of customers.</li>
+<li>Wallets are called "team" only when a public source says so. Exchange names come from public labels that the exchanges did not confirm.</li>
+<li>The trail stops at exchanges and services, because the money mixes there with the money of other customers.</li>
+<li>We analyzed about 957,000 transactions. This site shows the ones behind the findings, not all of them.</li>
+</ul>
+</div>
+</section>
+</main>
+
+<section class="contacto">
+<div class="marco">
+<div class="texto">
+<h2>Do you have a similar case?</h2>
+<p>I turn large sets of transactions into evidence that a compliance team, a lawyer or a journalist can check and use. If you have a similar case, tell me what you need to find out.</p>
+<div class="acciones">
+<a class="boton" href="mailto:cristian.giuppone@unc.edu.ar">Email me</a>
+<a href="https://www.linkedin.com/in/cristian-giuppone/" rel="noopener">Find me on LinkedIn</a>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="marco">
+<p>By Cristian Giuppone. Built with public data from Solana, Arbitrum, TRON and Ethereum. This is a research and teaching exercise, not a court expert's report.</p>
+<p>The dashboard uses a modified version of <a href="https://github.com/neo4j-contrib/neodash" rel="noopener">NeoDash</a>, Copyright 2023 Niels de Jong, under the <a href="LICENSE-NeoDash.txt">Apache License 2.0</a>. See <a href="NOTICE.md">what changed</a> and the <a href="THIRD-PARTY-NOTICES.txt">third-party licenses</a>. This site is not an official product of the NeoDash authors or of Neo4j, and they do not endorse it.</p>
+</footer>
+</body>
+</html>
